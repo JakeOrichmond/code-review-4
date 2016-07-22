@@ -1,0 +1,71 @@
+// Picture layout
+
+.picture-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  & .section-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 30em;
+    color: white;
+    padding: 3%;
+  }
+  & h4 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+  }
+}
+
+hr {
+  width: 4em;
+  display: block;
+  border: 0;
+  border-top: 6px solid;
+  color: #dc7725;
+  margin: 1em 0;
+  padding: 0;
+}
+
+#picture-one {
+  width: 50%;
+  background: url("../images/1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#picture-two {
+  width: 25%;
+  background: url("../images/2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#picture-three {
+  width: 25%;
+  background: url("../images/3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#picture-four {
+  width: 25%;
+  background: url("../images/4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#picture-five {
+  width: 25%;
+  background: url("../images/5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#picture-six {
+  width: 50%;
+  background: url("../images/6.jpeg");
+  background-size: cover;
+  background-position: center;
+}

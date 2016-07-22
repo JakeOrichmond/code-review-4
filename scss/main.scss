@@ -1,14 +1,14 @@
 @import "base/index";
-// @import "components/index";
 @import "helpers/index";
 
-//main-header-title
+//Main-image-title
+
 .main-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 5%;
-  .subtitle {
+  .small-title {
     font-size: 1.5em;
     text-transform: uppercase;
   }
@@ -17,71 +17,70 @@
     font-size: 7em;
     margin: auto 0;
   }
-  .title-underline {
+  .title-line {
     width: 250px;
-    height: 5px;
+    height: 8px;
     background: white;
     margin-top: 20px;
   }
 }
 
-//explore button
+//Explore button
 
-.explore-wrap {
+.explore-button-wrapper {
   width: 170px;
   height: 65px;
   background: $hover-over;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 300px;
+  margin-top: 325px;
   position: relative;
 }
 
-.explore-wrap::before {
-  content:'explore below';
-  text-transform: uppercase;
+.explore-button-wrapper::before {
+  content:'EXPLORE BELOW';
 }
 
-.explore-wrap::after {
+.explore-button-wrapper::after {
   content: '';
   border-top: 10px solid $hover-over;
-  border-right: 15px solid transparent;
-  border-left: 15px solid transparent;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
   position: absolute;
   right: 40%;
   top: 99%;
 
 }
 
-//navigation
+//Navigation
+
 .navigation-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.logo-wrap {
-  width: 50px;
-  margin-right: 10px;
-  svg {
-    width: 100%;
-  }
 }
 
 .title-nav-wrap {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-right: 150px;
-  transition-duration: .05s;
+  margin-right: 160px;
 }
 
 .title-nav-wrap:hover {
   color: $hover-over;
 }
 
+.logo-wrap {
+  width: 50px;
+  svg {
+    width: 100%;
+  }
+}
 
-//navigation-nav
+//Navigation bar
+
 .nav-list {
   display: flex;
   list-style: none;
@@ -101,7 +100,6 @@
       align-items: center;
       justify-content: space-around;
     }
-    transition-duration: .1s;
 }
 
 .nav-list {
