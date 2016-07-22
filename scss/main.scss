@@ -2,7 +2,128 @@
 // @import "components/index";
 @import "helpers/index";
 
+//main-header-title
+.main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  .subtitle {
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-size: 7em;
+    margin: auto 0;
+  }
+  .title-underline {
+    width: 250px;
+    height: 5px;
+    background: white;
+    margin-top: 20px;
+  }
+}
 
-body {
-  background-color: pink;
+//explore button
+
+.explore-wrap {
+  width: 170px;
+  height: 65px;
+  background: $hover-over;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 300px;
+  position: relative;
+}
+
+.explore-wrap::before {
+  content:'explore below';
+  text-transform: uppercase;
+}
+
+.explore-wrap::after {
+  content: '';
+  border-top: 10px solid $hover-over;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  position: absolute;
+  right: 40%;
+  top: 99%;
+
+}
+
+//navigation
+.navigation-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-wrap {
+  width: 50px;
+  margin-right: 10px;
+  svg {
+    width: 100%;
+  }
+}
+
+.title-nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 150px;
+  transition-duration: .05s;
+}
+
+.title-nav-wrap:hover {
+  color: $hover-over;
+}
+
+
+//navigation-nav
+.nav-list {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+  }
+    li {
+      width: 120px;
+      height: 50px;
+      text-transform: uppercase;
+      list-style: none;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    transition-duration: .1s;
+}
+
+.nav-list {
+  :first-child a:hover {
+    color: $hover-over;
+  }
+  :nth-child(1) a:hover {
+    color: $hover-over;
+  }
+  :nth-child(2) a:hover{
+    color: $hover-over;
+  }
+  :nth-child(3) a:hover {
+    color: $hover-over;
+  }
+  :nth-child(4) a:hover{
+    color: $hover-over;
+  }
+  :nth-child(5) a:hover{
+    color: $hover-over;
+  }
+  :last-child a:hover {
+    color: $hover-over;
+  }
 }
