@@ -1,0 +1,10 @@
+@mixin picture {
+  background-size: cover;
+  background-position: center; 
+}
+
+@mixin animation-magic {
+  -webkit-animation: cssAnimation 1.9863s 1 ease;
+  -moz-animation: cssAnimation 1.9863s 1 ease;
+  -o-animation: cssAnimation 1.9863s 1 ease;
+}

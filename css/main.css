@@ -20,6 +20,10 @@ a {
   height: 100vh;
   color: white;
   overflow: hidden; }
+  @media only screen and (max-width: 750px) {
+    .hero {
+      width: 100%;
+      text-align: center; } }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -82,9 +86,20 @@ table {
     height: 30em;
     color: white;
     padding: 3%; }
+    @media only screen and (max-width: 750px) {
+      .picture-section .section-item {
+        height: 10em;
+        margin: 1%;
+        width: 100%; } }
   .picture-section h4 {
     text-transform: uppercase;
     font-size: 1.5em; }
+
+.section-item {
+  opacity: 1; }
+
+.section-item:hover {
+  opacity: .5; }
 
 hr {
   width: 4em;
@@ -100,36 +115,54 @@ hr {
   background: url("../images/1.jpg");
   background-size: cover;
   background-position: center; }
+  @media only screen and (max-width: 750px) {
+    #picture-one {
+      width: 100%; } }
 
 #picture-two {
   width: 25%;
   background: url("../images/2.jpg");
   background-size: cover;
   background-position: center; }
+  @media only screen and (max-width: 750px) {
+    #picture-two {
+      width: 100%; } }
 
 #picture-three {
   width: 25%;
   background: url("../images/3.jpg");
   background-size: cover;
   background-position: center; }
+  @media only screen and (max-width: 750px) {
+    #picture-three {
+      width: 100%; } }
 
 #picture-four {
   width: 25%;
   background: url("../images/4.jpg");
   background-size: cover;
   background-position: center; }
+  @media only screen and (max-width: 750px) {
+    #picture-four {
+      width: 100%; } }
 
 #picture-five {
   width: 25%;
   background: url("../images/5.jpg");
   background-size: cover;
   background-position: center; }
+  @media only screen and (max-width: 750px) {
+    #picture-five {
+      width: 100%; } }
 
 #picture-six {
   width: 50%;
   background: url("../images/6.jpeg");
   background-size: cover;
   background-position: center; }
+  @media only screen and (max-width: 750px) {
+    #picture-six {
+      width: 100%; } }
 
 .main-title {
   display: flex;
@@ -169,7 +202,7 @@ hr {
   border-left: 10px solid transparent;
   position: absolute;
   right: 40%;
-  top: 99%; }
+  top: 100%; }
 
 .navigation-wrap {
   display: flex;
@@ -207,6 +240,16 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-around; }
+
+@media only screen and (max-width: 750px) {
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2px; } }
+
+@media only screen and (max-width: 750px) {
+  .logo {
+    display: none; } }
 
 .nav-list :first-child a:hover {
   color: #dc7725; }
