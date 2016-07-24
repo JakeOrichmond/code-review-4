@@ -1,10 +1,43 @@
 @mixin picture {
   background-size: cover;
-  background-position: center; 
+  background-position: center;
 }
 
-@mixin animation-magic {
-  -webkit-animation: cssAnimation 1.9863s 1 ease;
-  -moz-animation: cssAnimation 1.9863s 1 ease;
-  -o-animation: cssAnimation 1.9863s 1 ease;
+@mixin magic {
+  color: #fff;
+  animation: pulse 1s ease infinite;
+}
+
+@mixin more-magic {
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+
+/* Pulse */
+@mixin kaboom {
+  @-webkit-keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
 }

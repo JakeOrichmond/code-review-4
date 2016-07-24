@@ -1,0 +1,30 @@
+//Explore button
+
+.explore-button-wrapper {
+  width: 170px;
+  height: 65px;
+  background: $hover-over;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 325px;
+  position: relative;
+  @include magic;
+  &:hover {
+    @include more-magic;
+  }
+}
+
+.explore-button-wrapper::before {
+  content:'EXPLORE BELOW';
+}
+
+.explore-button-wrapper::after {
+  content: '';
+  border-top: 10px solid $hover-over;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  position: absolute;
+  right: 40%;
+  top: 100%;
+}
